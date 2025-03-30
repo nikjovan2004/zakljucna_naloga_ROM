@@ -1,0 +1,93 @@
+/* Filtri */
+.filtri {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filtri button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filtri button.active {
+    background-color: #1e40af;
+}
+
+.filtri button:hover {
+    background-color: #1e40af;
+}
+
+/* Horizontalna časovnica */
+.casovnica-container {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+}
+
+.casovnica {
+    background-color: white;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    width: max-content;
+}
+
+.casovnica-item {
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    min-width: 300px;
+    flex-shrink: 0;
+}
+
+.casovnica-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.casovnica-item h3 {
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.podjetje {
+    color: #4b5563;
+    font-size: 0.9rem;
+}
+
+.period-time {
+    color: #6b7280;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.opis-dela {
+    color: #4b5563;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.pridobljene-vescine {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.pridobljene-vescine span {
+    background-color: #dbeafe;
+    color: #2563eb;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+}

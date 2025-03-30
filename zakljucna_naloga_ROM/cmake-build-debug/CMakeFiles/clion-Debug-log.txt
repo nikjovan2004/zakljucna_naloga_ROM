@@ -1,0 +1,1 @@
+CMakeLists.txt not found in C:\Users\Nik Jovan\CLionProjects\zakljucna_naloga_ROM Select CMakeLists.txt
